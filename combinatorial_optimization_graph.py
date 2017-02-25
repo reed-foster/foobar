@@ -19,12 +19,17 @@ def getminguards(graph):
 def getgraph(ls):
     graph = []
     for i in range(0, len(ls)):
-        graph.append([])
+        graph.append(())
+        newlist = []
         for j in range(0, len(ls)):
             if (i != j):
                 if (infloop(ls[i], ls[j])):
-                    graph[i].append(j)
-    return graph
+                    newlist.append(ls[j])
+        graph[i] = (ls[i], newlist)
+    return sortbydegree(graph)
+
+def sortbydegree(graph):
+    return [i for i in sorted(graph, key = lambda k: len(k[1]))]
 
 def remove(graph, idx):
     #removes a node that has no edges
