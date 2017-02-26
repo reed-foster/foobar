@@ -13,7 +13,9 @@ The length of banana_list will be between 1 and 100, and any guard can have
 between 1 and 2 ^ 31 - 1 bananas
 
 Examples:
+<pre>
 >>> answer([1, 1])
 2
 >>> answer([1, 7, 3, 21, 19, 13])
 0
+</pre>
