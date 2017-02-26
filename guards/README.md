@@ -20,14 +20,14 @@ Examples:
 0
 </pre>
 
-foobarwork.py is the original solution file that I abandoned after I rethought the problem.
+<b>foobarwork.py</b> is the original solution file that I abandoned after I rethought the problem.
 It uses Tkinter to render a pattern of "infinite loop" pairings that I used to find a fast solution
 for determining if two guards would enter an infinite loop or not.
 
-combinatorial_optimization_bruteforce.py provides a brute force solution that checks all
+<b>combinatorial_optimization_bruteforce.py</b> provides a brute force solution that checks all
 possible combinations of guards and returns the minimum free guards
 
-combinatorial_optimization_graph.py uses a graph data structure to represent the guards; each
+<b>combinatorial_optimization_graph.py</b> uses a graph data structure to represent the guards; each
 guard is a node, and nodes are connected if the two guards represented by those nodes would enter
 an infinite thumbwrestling loop. The getminguards function trims pairs of connected nodes off of
 the graph and counts the total number of unconnected nodes. This count represents the number of
